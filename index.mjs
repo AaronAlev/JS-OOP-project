@@ -1,7 +1,7 @@
-import Course from "./course.mjs"
-import Student from "./student.mjs"
-import School from "./school.mjs"
-import Person from "./person.mjs"
+import Course from "./classes/course.mjs"
+import Student from "./classes/student.mjs"
+import School from "./classes/school.mjs"
+import Person from "./classes/person.mjs"
 
 const aimar = new Student("Aimar")
 const marten = new Student("Marten")
