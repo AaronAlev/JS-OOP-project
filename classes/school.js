@@ -1,11 +1,15 @@
-import Student from "./student.mjs"
+const Student = require('./student.js')
 
-export default class School {
+class School {
     constructor(name) {
         this.name = name
         this.students = []
         this.courses = []
         this.newId = 1
+    }
+
+    getName() {
+        return this.name
     }
 
     addCourse(course) {
@@ -62,3 +66,5 @@ export default class School {
         return this.students.sort((a, b) => b.getAverageGrade() - a.getAverageGrade())
     }
 }
+
+module.exports = School

@@ -1,6 +1,6 @@
-import Person from "./person.mjs"
+const Person = require('./person.js')
 
-export default class Student extends Person {
+class Student extends Person {
     constructor(name) {
         super(name)
         this.id = null
@@ -39,3 +39,5 @@ export default class Student extends Person {
         return this.name
     }
 }
+
+module.exports = Student

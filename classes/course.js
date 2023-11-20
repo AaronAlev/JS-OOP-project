@@ -1,4 +1,4 @@
-export default class Course {
+class Course {
     constructor(name) {
         this.grades = []
         this.name = name
@@ -26,3 +26,5 @@ export default class Course {
         return this.name
     }
 }
+
+module.exports = Course

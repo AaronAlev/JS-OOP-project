@@ -1,4 +1,4 @@
-export default class Person {
+class Person {
     constructor(name) {
         this.name = name
     }
@@ -24,3 +24,5 @@ export default class Person {
         return this.name + " on inimene, kes on syndinud " + this.birthYear + ". aastal"
     }
 }
+
+module.exports = Person

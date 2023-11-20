@@ -12,7 +12,7 @@ const getSchoolStudents = (req, res) => {
 }
 
 const getSchoolCourses = (req, res) => {
-    res.json({courses: school.getCourses})
+    res.json({courses: school.getCourses},)
 }
 
 module.exports = {
