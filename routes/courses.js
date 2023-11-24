@@ -3,7 +3,7 @@ const router = express.Router()
 
 const courseController = require('../controllers/courses')
 
-router.get("/:name", (req, res) => schoolController.getSchoolName(req, res))
-router.get("/:name/grades", (req, res) => schoolController.getSchoolStudents(req, res))
+router.get("/:name", (req, res) => courseController.getCourseName(req, res))
+router.get("/:name/grades", (req, res) => courseController.getCourseStudents(req, res))
 
 module.exports=router;

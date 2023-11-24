@@ -1,6 +1,6 @@
 const express = require('express')
 
-const school = require('../data/example')
+const school = require('../data/example').school
 
 const getSchoolName = (req, res) => {
     if(school.getName() === req.params.name){
@@ -12,7 +12,7 @@ const getSchoolStudents = (req, res) => {
 }
 
 const getSchoolCourses = (req, res) => {
-    res.json({courses: school.getCourses},)
+    res.json({courses: school.getCourses()})
 }
 
 module.exports = {
